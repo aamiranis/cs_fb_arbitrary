@@ -1,0 +1,48 @@
+GraphBior-toolbox: Graph Biorthogonal Wavelet Filterbank toolbox
+(c) Sunil K Narang, 2012
+
+Primary Author : Sunil K Narang (kumarsun@usc.edu)
+
+This toolbox contains code implementing the graphBior Wavelet
+Filterbanks, a general framework for 
+defining wavelet filterbanks for
+data defined on vertices of a weighted graph. The algorithms
+implemented here are described in detail in 
+
+"Compact Support Biorthogonal Wavelet Filterbanks for Arbitrary Undirected Graphs", 
+S. K. Narang and Antonio Ortega, 
+Tech. Rep. arXiv:1210.8129, Nov 2012,
+
+No extra toolboxes are required to be installed. Matalab wavelet toolbox is NOT required. 
+The codes include a sgwt_toolbox from http://wiki.epfl.ch/sgwt.
+
+
+Installation of the files is simple, simply unpack the directory. 
+
+Then, run the demos
+
+>> Biorth_filterbank_demo1
+>> Biorth_filterbank_demo2
+and
+>> Biorth_filterbank_demo3
+
+See the source codes for additional options.
+
+License : 
+
+The graph-QMF toolbox is a Matlab library released under the GPL.
+
+The graph-QMF toolbox is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The graph-QMF toolbox is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with the SGWT toolbox.  If not, see <http://www.gnu.org/licenses/>.
+
+

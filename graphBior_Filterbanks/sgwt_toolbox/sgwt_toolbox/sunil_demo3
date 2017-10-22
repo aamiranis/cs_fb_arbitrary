@@ -1,0 +1,3 @@
+A = sgwt_meshmat(4);
+L = 4*eye(16) - A;
+

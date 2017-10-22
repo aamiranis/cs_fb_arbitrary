@@ -1,0 +1,46 @@
+Graph-QMF-toolbox: Graph Quadrature Mirror Filterbank toolbox
+(c) Sunil K Narang, 2011
+
+Primary Author : Sunil K Narang (kumarsun@usc.edu)
+
+This toolbox contains code implementing the graph-QMF Wavelet
+Filterbanks, a general framework for 
+defining wavelet filterbanks for
+data defined on vertices of a weighted graph. The algorithms
+implemented here are described in detail in 
+
+"Perfect Reconstruction Two-Channel Wavelet Filter-Banks For Graph Structured Data", 
+S. K. Narang and Antonio Ortega, 
+Tech. Rep. arXiv:1106.3693v2, June 2011,
+
+Before you uunpack the files: you need to install additional toolboxes on your computer.
+These are following:
+1. SGWT_toolbox by David Hammond. Link: http://wiki.epfl.ch/sgwt
+2. Graph-Viz Software. Link: http://www.graphviz.org/
+3. Matlab plugin toolbox for Graph-Viz. Link : http://www.mathworks.com/matlabcentral/fileexchange/4518-matlab-graphviz-interface
+
+
+Installation of the files is simple, simply unpack the directory. 
+
+Then, run the demo
+
+>> QMF_Filterbank_Demo
+
+License : 
+
+The graph-QMF toolbox is a Matlab library released under the GPL.
+
+The graph-QMF toolbox is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The graph-QMF toolbox is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with the SGWT toolbox.  If not, see <http://www.gnu.org/licenses/>.
+
+

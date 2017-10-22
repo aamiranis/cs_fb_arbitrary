@@ -1,0 +1,8 @@
+function D = CT_distance(A)
+% find commute time distance of adjacency matrix A
+n = length(A);
+D1 = diag(sum(A,2));
+L = D1 - A;
+[U Lam] = eig(L);
+Lam = diag(Lam);
+Lam = 1./Lam(2:n);

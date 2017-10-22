@@ -1,0 +1,64 @@
+%% filter-designs based on various methods
+
+% create graph 
+N = 20;
+
+% A = square_grid(N);
+% Q=load('minnesota.mat');
+% xy=Q.xy;
+% A=Q.A;
+% A = full(A);
+% random graph
+clear all
+close all
+clc
+N = 400;
+p = 0.005;
+A = rand(N);
+G = A < p;
+G = triu(G,1);
+G = G + G';
+Sum = sum(G,2);
+ind = find(Sum ~=0);
+A = G(ind,ind); 
+N = length(A);
+D = diag(sum(A,2));
+L = D - A;
+[U Lam] = eig(L);
+Lam = diag(Lam);
+% D = diag(sum(A,2));
+% L = D - A;
+% [U Lam] = eig(L);
+% Lam = diag(Lam);
+
+% Ramchandran's design
+k = 2;
+numHops = k; % every nodes operates in k-hop neighborhood
+
+A1 = A+A^2+A^3+A^4;
+A = double(A1>0);
+D = diag(sum(A,2));
+% L = D - A;
+% [U Lam] = eig(L);
+% Lam = diag(Lam);
+a = 0.4;
+b = 0.4;
+I = eye(N);
+T_high = (1+b)*I - b*(I+D)^(-1)*(I+A);
+T_low = (1-a)*I + a*(I+D)^(-1)*(I+A);
+% T_high = I + b*(I+D)^(-1)*L;
+% T_low =  I - a*(I+D)^(-1)*L;
+
+H_high = U'*T_high*U;
+H_low = U'*T_low*U;
+
+% for i = 1:400
+% plot(H_high(:,i))
+% pause
+% end
+% 
+% for i = 1:400
+% plot(H_low(:,i))
+% pause
+% end
+
